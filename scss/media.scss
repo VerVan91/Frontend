@@ -1,0 +1,38 @@
+$mediaXl: 1920px;
+$mediaXLg: 1279px;
+$mediaLg: 1023px;
+$mediaMd: 767px;
+$mediaSm: 639px;
+$mediaFix: 479px;
+$mediaVm: 320px;
+$mediaxlMin: 1920px;
+
+// от 1280 до 1920
+@mixin xl {
+  @media screen and (max-width: $mediaXl) {@content;}
+}
+
+// от 1024 до 1279
+@mixin xlg {
+  @media screen and (max-width: $mediaXLg) {@content;}
+}
+
+// от 768 до 1023
+@mixin lg {
+  @media screen and (max-width: $mediaLg) {@content;}
+}
+
+// от 640 до 767
+@mixin md {
+  @media screen and (max-width: $mediaMd) {@content;}
+}
+
+// от 480 до 639
+@mixin sm {
+  @media screen and (max-width: $mediaSm) {@content;}
+}
+
+// от 320 до 479
+@mixin mdFix {
+  @media screen and (max-width: $mediaFix) {@content;}
+}
